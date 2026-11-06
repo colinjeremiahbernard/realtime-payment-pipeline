@@ -1,0 +1,16 @@
+{
+  "type": "record",
+  "name": "Account",
+  "namespace": "com.payments",
+  "doc": "An account record event (v1).",
+  "fields": [
+    { "name": "account_id",    "type": "string",  "doc": "UUID of the account" },
+    { "name": "holder_name",   "type": "string",  "doc": "Full name of the card holder" },
+    { "name": "email",         "type": "string",  "doc": "Contact email" },
+    { "name": "card_number",   "type": "string",  "doc": "Masked card number" },
+    { "name": "card_brand",    "type": "string",  "doc": "VISA | MASTERCARD | ELO | AMEX" },
+    { "name": "credit_limit",  "type": "double",  "doc": "Approved credit limit in BRL" },
+    { "name": "status",        "type": "string",  "doc": "ACTIVE | BLOCKED | CLOSED" },
+    { "name": "created_at",    "type": "long",    "logicalType": "timestamp-millis", "doc": "Account creation timestamp" }
+  ]
+}

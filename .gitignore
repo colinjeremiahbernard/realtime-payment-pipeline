@@ -1,0 +1,32 @@
+# environment
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Node / npm (if any tooling added later)
+node_modules/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Terraform state (if Terraform layer is added)
+*.tfstate
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+
+# Docker volumes
+docker/postgres/data/
+
+# Logs
+*.log

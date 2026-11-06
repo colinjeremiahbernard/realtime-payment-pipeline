@@ -1,0 +1,17 @@
+{
+  "type": "record",
+  "name": "Transaction",
+  "namespace": "com.payments",
+  "doc": "A payment transaction event (v1).",
+  "fields": [
+    { "name": "transaction_id",     "type": "string",  "doc": "UUID of the transaction" },
+    { "name": "account_id",         "type": "string",  "doc": "UUID of the account" },
+    { "name": "card_number",        "type": "string",  "doc": "Masked card number" },
+    { "name": "merchant_name",      "type": "string",  "doc": "Name of the merchant" },
+    { "name": "merchant_category",  "type": "string",  "doc": "Merchant category code" },
+    { "name": "amount",             "type": "double",  "doc": "Transaction amount" },
+    { "name": "currency",           "type": "string",  "doc": "ISO 4217 currency code" },
+    { "name": "status",             "type": "string",  "doc": "PENDING | APPROVED | DECLINED | REVERSED" },
+    { "name": "created_at",         "type": "long",    "logicalType": "timestamp-millis", "doc": "Event timestamp in epoch millis" }
+  ]
+}
